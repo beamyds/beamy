@@ -5,8 +5,6 @@
 #define C1 -4.661
 #define C0 213.08
 
-// Test
-
 void compute_angle(void){
 	uint16_t distance_to_screen = 0;
    	float motor_angle = 0;
