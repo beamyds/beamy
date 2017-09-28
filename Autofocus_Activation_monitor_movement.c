@@ -3,6 +3,8 @@
 
 #define STATIBILIZATION_T 	3     // 1500ms
 
+// TEST from GitHub
+
 void monitor_movement(void){
 	static uint8_t state = STATE_READ_DISTANCE;
   	uint8_t next_state = STATE_READ_DISTANCE;
