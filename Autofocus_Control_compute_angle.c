@@ -2,7 +2,7 @@
 #define DISTANCE_MAX 400;
 
 #define C2 0.0557
-#define C1 -4.662
+#define C1 -4.661
 #define  C0 213.08
 
 void compute_angle(void){
