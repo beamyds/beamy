@@ -1,4 +1,3 @@
-//Read Sensor information
 #define K 0.45
 
 void read_sensor(void){
