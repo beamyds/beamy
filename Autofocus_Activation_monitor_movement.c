@@ -4,6 +4,7 @@
 #define STATIBILIZATION_T 	3     // 1500ms
 
 // TEST from GitHub
+// TEST from DGE
 
 void monitor_movement(void){
 	static uint8_t state = STATE_READ_DISTANCE;
