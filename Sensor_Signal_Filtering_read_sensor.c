@@ -6,8 +6,6 @@ void read_sensor(void){
   	static uint16_t distance = 0;
   
 	RTE_Call_read_distance(&new_distance);
-	//
-  
   	// Remove noise
   	distance = K * new_distance + (1 - K) * distance;
   	
