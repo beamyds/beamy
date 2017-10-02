@@ -6,10 +6,10 @@
 #define C0 213.08
 
 void compute_angle(void){
-	uint16_t distance_to_screen = 0;
+	uint16_t* distance_to_screen;
    	float motor_angle = 0;
   
-  	RTE_Read_screen_distance(&distance_to_screen);
+  	distance_to_screen = RTE_Read_screen_distance();
   
   	if(distance_to_screen > DISTANCE_MIN && distance_to_screen < DISTANCE_MAX){
     	motor_angle = C2 * distance_to_screen * distance_to_screen + C1 * distance_to_screen + C0;
