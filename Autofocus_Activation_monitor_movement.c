@@ -26,7 +26,7 @@ void monitor_movement(void){
   
   	switch(state){
       case STATE_READ_DISTANCE:
-        RTE_Read_screen_distance(&distance);
+        distance = *RTE_Read_screen_distance();
     	previous_distance = distance;
       
       	// It is moving
