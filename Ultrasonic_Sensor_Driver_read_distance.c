@@ -1,3 +1,4 @@
 void read_distance(uint16_t* distance){
-	/* Your code here */
+	// FIXME read a distance on sensor
+  *distance = 0;
 }
