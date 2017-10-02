@@ -1,5 +1,5 @@
-#define DISTANCE_MIN 100;
-#define DISTANCE_MAX 400;
+#define DISTANCE_MIN 100
+#define DISTANCE_MAX 400
 
 #define C2 0.0557
 #define C1 -4.661
