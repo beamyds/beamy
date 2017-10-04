@@ -13,6 +13,6 @@ void compute_angle(void){
   
   	if(distance_to_screen > DISTANCE_MIN && distance_to_screen < DISTANCE_MAX){
     	motor_angle = C2 * distance_to_screen * distance_to_screen + C1 * distance_to_screen + C0;
-    	RTE_Call_set_motor_angle(&motor_angle);
+    	RTE_Call_set_motor_angle(motor_angle);
   	}
 }
