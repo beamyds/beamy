@@ -13,13 +13,13 @@
 void compute_angle(void){
 	uint16_t distance_to_screen = 0;
    	float motor_angle = 0;
-  	uint16_t round_motor_angle;
+  	int round_motor_angle;
   
   	distance_to_screen = *RTE_Read_screen_distance();
   
   	if(distance_to_screen > DISTANCE_MIN && distance_to_screen < DISTANCE_MAX){
     	motor_angle = distance_to_screen + C1 * distance_to_screen + C0;
-      	round_motor_angle = floor(motor_angle + 0.5f);
+      	round_motor_angle = (int) floor(motor_angle + 0.5f);
     	RTE_Call_set_motor_angle(round_motor_angle);
   	}
 }
