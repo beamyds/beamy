@@ -1,4 +1,3 @@
-#include <math.h>
 #include "Fmi_Cfg.h" // Ids for <XXX>WriteToSharedObj
 #include "ASimSharedObjUtils.h" // <XXX>WriteToSharedObj
 
