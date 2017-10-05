@@ -1,15 +1,12 @@
-#include <math.h>
-
-// Angle range = [180, 280]
-// Linear function as first approximation
-//    y = 0.285x + 165.714
-
 #define DISTANCE_MIN 50
 #define DISTANCE_MAX 400
 
 #define C1 0.285
 #define C0 165.714
 
+// Angle range = [180, 280]
+// Linear function as first approximation
+//    y = 0.285x + 165.714
 
 void compute_angle(void){
 	uint16_t distance_to_screen = 0;
