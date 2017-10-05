@@ -1,3 +1,6 @@
+#include "Fmi_Cfg.h" // Ids for <XXX>WriteToSharedObj
+#include "ASimSharedObjUtils.h" // <XXX>WriteToSharedObj
+
 void read_distance(int* distance){
   fmi2Integer data;
   
