@@ -11,8 +11,8 @@
 //    y = 0.285x + 165.714
 
 void compute_angle(void){
-	uint16_t distance_to_screen = 0;
-   	float motor_angle = 0;
+	uint16_t distance_to_screen = 50;
+   	float motor_angle = 180;
   	uint16_t round_motor_angle;
   
   	distance_to_screen = *RTE_Read_screen_distance();
