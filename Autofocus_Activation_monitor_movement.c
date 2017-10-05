@@ -35,7 +35,7 @@ void monitor_movement(void){
           next_state = STATE_READ_DISTANCE;
         } else {
           // Is it stabilized?
-          if(stabilization_counter++ >= 3){
+          if(stabilization_counter++ >= 5){
             next_state = STATE_ACTIVATE_AF;
           } else {
             next_state = STATE_READ_DISTANCE;
