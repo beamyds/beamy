@@ -6,5 +6,5 @@ void read_switch_status(uint8_t* status){
   
   fmi2IntegerReadFromWriteBuffer(InputId_Switch_Button_Driver_read_switch_status_0, &data);
   
-  *status = (unint8_t) data;
+  *status = (uint8_t) data;
 }
