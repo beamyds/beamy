@@ -1,6 +1,7 @@
 // Angle range = [180, 280]
 // Linear function as first approximation
 //    y = 0.285x + 165.714
+
 #define DISTANCE_MIN 50
 #define DISTANCE_MAX 400
 
