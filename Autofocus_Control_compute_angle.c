@@ -5,9 +5,9 @@
 #define DISTANCE_MIN 50
 #define DISTANCE_MAX 400
 
-#define C2 0.0557
-#define C1 -4.661
-#define C0 213.08
+#define C1 0.285
+#define C0 165.714
+
 
 void compute_angle(void){
 	uint16_t distance_to_screen = 0;
@@ -16,7 +16,7 @@ void compute_angle(void){
   	distance_to_screen = *RTE_Read_screen_distance();
   
   	if(distance_to_screen > DISTANCE_MIN && distance_to_screen < DISTANCE_MAX){
-    	motor_angle = C2 * distance_to_screen * distance_to_screen + C1 * distance_to_screen + C0;
+    	motor_angle = distance_to_screen + C1 * distance_to_screen + C0;
     	RTE_Call_set_motor_angle(motor_angle);
   	}
 }
