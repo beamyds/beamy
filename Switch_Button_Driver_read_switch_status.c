@@ -4,7 +4,7 @@
 void read_switch_status(uint8_t* status){
   fmi2Integer data;
   
-  fmi2IntegerReadFromWriteBuffer(InputId_Inertial_Measurement_Unit_read_accelerometer_0, &data);
+  fmi2IntegerReadFromWriteBuffer(InputId_Switch_Button_Driver_read_switch_status_0, &data);
   
-  *status = (unint8_t) status;
+  *status = (unint8_t) data;
 }
