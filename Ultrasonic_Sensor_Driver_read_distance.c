@@ -6,5 +6,5 @@ void read_distance(int* distance){
   
   fmi2IntegerReadFromWriteBuffer(InputId_Ultrasonic_Sensor_Driver_read_distance_0, &data);
   
-  *distance = (int) data;
+  *distance = (uint16_t) data;
 }
