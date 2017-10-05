@@ -2,6 +2,5 @@
 #include "ASimSharedObjUtils.h" // <XXX>WriteToSharedObj
 
 void set_motor_angle(uint16_t angle){
-    // FIXME
-	(void) angle;
+  	fmi2IntegerWriteToSharedObj(Servo_Motor_Driver_set_motor_angle_0, angle);
 }
