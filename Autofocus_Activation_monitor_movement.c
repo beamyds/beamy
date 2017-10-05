@@ -7,8 +7,8 @@ void monitor_movement(void){
 	static uint8_t state = STATE_READ_DISTANCE;
   	uint8_t next_state = STATE_READ_DISTANCE;
   
-  	static uint8_t previous_distance = 0;
-  	uint8_t distance = 0;
+  	static uint8_t previous_distance = 50;
+  	uint8_t distance = 50;
   
   	static uint8_t stabilization_counter = 0;
   
@@ -18,7 +18,7 @@ void monitor_movement(void){
   	RTE_Call_read_switch_status(&switch_status);
   
   	if(!switch_status){
-    	previous_distance = 0;
+    	previous_distance = 50;
       	stabilization_counter = 0;
       	state = STATE_READ_DISTANCE;
     	return;
