@@ -15,7 +15,7 @@ void monitor_movement(void){
   	uint8_t switch_status = 0;
   	uint8_t activation_trigger = 1;
   
-  	switch_status = *RTE_Read_switch_status();
+  	RTE_Read_switch_status(&switch_status);
   
   	if(!switch_status){
     	previous_distance = 0;
