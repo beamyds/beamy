@@ -1,4 +1,3 @@
-#include <stdint.h>
 #include <math.h>
 
 #define DISTANCE_MIN 50
