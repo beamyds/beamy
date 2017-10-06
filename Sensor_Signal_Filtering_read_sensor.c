@@ -1,6 +1,5 @@
 #define K 0.45
 //filter noise on sensors 
-// test
 //XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 void read_sensor(void){
