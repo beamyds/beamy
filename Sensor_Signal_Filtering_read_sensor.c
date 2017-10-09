@@ -8,7 +8,7 @@ void read_sensor(void){
   
 	RTE_Call_read_distance(&new_distance);
   	// Remove noise
-  	distance = K * new_distance + (1 - K) * distance;
+  	distance = Kx * new_distance + (1 - K) * distance;
   	
   	RTE_Write_screen_distance(&distance);
 }
