@@ -10,6 +10,8 @@
 // Linear function as first approximation
 //    y = 0.285x + 165.714
 
+//XXX
+
 void compute_angle(void){
 	uint16_t distance_to_screen = DISTANCE_MIN;
    	float motor_angle = 180;
