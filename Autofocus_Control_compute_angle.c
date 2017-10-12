@@ -6,8 +6,8 @@
 #define C1 0.285
 #define C0 165.714
 
-// Angle range    = [180, 280]
-// Distance range = [50, 400]
+// IN  : Distance range = [50, 400]
+// OUT : Angle range    = [180, 280]
 // Linear function as first approximation
 //    y = 0.285x + 165.714
 
