@@ -1,5 +1,5 @@
 #define K 0.45
-//filter noise on sensor
+//filter noise on sensor 
 
 void read_sensor(void){
 	uint16_t new_distance = 0;
