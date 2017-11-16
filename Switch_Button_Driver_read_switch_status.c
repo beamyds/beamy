@@ -1,7 +1,7 @@
 #include <stdint.h>
 #include "Fmi_Cfg.h" // Ids for <XXX>WriteToSharedObj
 #include "ASimSharedObjUtils.h" // <XXX>WriteToSharedObj
-
+a
 void read_switch_status(uint8_t* status){
   fmi2Integer data;
   
