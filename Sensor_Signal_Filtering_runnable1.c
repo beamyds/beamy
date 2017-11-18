@@ -26,8 +26,8 @@
         ]
       },
       "attributes": [],
-      "x": -30.0,
-      "y": -20.0,
+      "x": -694.0,
+      "y": -188.0,
       "width": 60.0,
       "height": 40.0,
       "simuStartIndex": 0
