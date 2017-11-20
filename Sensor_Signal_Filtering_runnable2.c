@@ -3,7 +3,42 @@
     "operation": "SYSTEM",
     "portSpecifications": []
   },
-  "blocks": [],
+  "blocks": [
+    {
+      "name": "Low Pass Filter1",
+      "type": {
+        "operation": "LOW_PASS_FILTER",
+        "portSpecifications": [
+          {
+            "name": "1",
+            "direction": "IN",
+            "xRatio": 0.0,
+            "yRatio": 0.5,
+            "simuNumber": 0
+          },
+          {
+            "name": "2",
+            "direction": "OUT",
+            "xRatio": 1.0,
+            "yRatio": 0.5,
+            "simuNumber": 0
+          }
+        ]
+      },
+      "attributes": [
+        {
+          "name": "Coefficient",
+          "type": "http://www.w3.org/2001/XMLSchema#double",
+          "value": "1"
+        }
+      ],
+      "x": -709.1328,
+      "y": -540.0,
+      "width": 60.0,
+      "height": 40.0,
+      "simuStartIndex": 0
+    }
+  ],
   "ios": [
     {
       "name": "read_distance",
