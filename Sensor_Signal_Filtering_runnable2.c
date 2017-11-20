@@ -3,29 +3,7 @@
     "operation": "SYSTEM",
     "portSpecifications": []
   },
-  "blocks": [
-    {
-      "name": "read_distance",
-      "type": {
-        "operation": "PORT_SYS_IN",
-        "portSpecifications": [
-          {
-            "name": "1",
-            "direction": "OUT",
-            "xRatio": 1.0,
-            "yRatio": 0.5,
-            "simuNumber": 0
-          }
-        ]
-      },
-      "attributes": [],
-      "x": 10.0,
-      "y": 10.0,
-      "width": 30.0,
-      "height": 20.0,
-      "simuStartIndex": 0
-    }
-  ],
+  "blocks": [],
   "ios": [
     {
       "name": "read_distance",
