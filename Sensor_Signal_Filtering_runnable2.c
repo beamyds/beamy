@@ -206,6 +206,87 @@
         -678.1328,
         -492.0
       ]
+    },
+    {
+      "sourceBlock": {
+        "name": "Low Pass Filter1",
+        "type": {
+          "operation": "LOW_PASS_FILTER",
+          "portSpecifications": [
+            {
+              "name": "1",
+              "direction": "IN",
+              "xRatio": 0.0,
+              "yRatio": 0.5,
+              "simuNumber": 0
+            },
+            {
+              "name": "2",
+              "direction": "OUT",
+              "xRatio": 1.0,
+              "yRatio": 0.5,
+              "simuNumber": 0
+            }
+          ]
+        },
+        "attributes": [
+          {
+            "name": "Coefficient",
+            "type": "http://www.w3.org/2001/XMLSchema#double",
+            "value": "1"
+          }
+        ],
+        "x": -678.1328,
+        "y": -512.0,
+        "width": 60.0,
+        "height": 40.0,
+        "simuStartIndex": 0
+      },
+      "sourcePortSpecification": {
+        "name": "2",
+        "direction": "OUT",
+        "xRatio": 1.0,
+        "yRatio": 0.5,
+        "simuNumber": 0
+      },
+      "targetBlock": {
+        "name": "screen_distance",
+        "type": {
+          "operation": "PORT_SYS_OUT",
+          "portSpecifications": [
+            {
+              "name": "1",
+              "direction": "IN",
+              "xRatio": 0.0,
+              "yRatio": 0.5,
+              "simuNumber": 0
+            }
+          ]
+        },
+        "attributes": [],
+        "x": -440.1328,
+        "y": -493.0,
+        "width": 30.0,
+        "height": 20.0,
+        "simuStartIndex": 0
+      },
+      "targetPortSpecification": {
+        "name": "1",
+        "direction": "IN",
+        "xRatio": 0.0,
+        "yRatio": 0.5,
+        "simuNumber": 0
+      },
+      "points": [
+        -618.1328,
+        -492.0,
+        -529.1328,
+        -492.0,
+        -529.1328,
+        -483.0,
+        -440.1328,
+        -483.0
+      ]
     }
   ]
 }
